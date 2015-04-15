@@ -1,0 +1,25 @@
+/* two-column layout, p.68 */
+
+main {
+    width: 500px;
+    margin: auto;
+    background: gray;
+    overflow: auto;
+}
+
+nav {
+    width: 100px;
+    float: right;
+}
+
+/* remove defaults on the p elements inside the nav */
+nav p {
+    margin: 0;
+    padding: 0;
+}
+/*this p element follows the nav */
+p.content {
+    margin: 0; /* zero out the default margin */
+    float: left;
+    width: 400px;
+}
